@@ -5,8 +5,10 @@ import { useState } from "react";
 
 import { Header } from "~/components/Header";
 import { NoteEditor } from "~/components/NoteEditor";
+import { NoteCard } from "~/components/NoteCard";
 import { api, type RouterOutputs } from "../utils/api";
 
+// https://www.youtube.com/watch?v=J1gzN1SAhyM
 const Home: NextPage = () => {
   return (
     <>
@@ -99,7 +101,7 @@ const Content: React.FC = () => {
         />
       </div>
       <div className="col-span-3">
-        {/* <div>
+        <div>
           {notes?.map((note) => (
             <div key={note.id} className="mt-5">
               <NoteCard
@@ -108,7 +110,7 @@ const Content: React.FC = () => {
               />
             </div>
           ))}
-        </div> */}
+        </div>
 
         <NoteEditor
           onSave={({ title, content }) => {
