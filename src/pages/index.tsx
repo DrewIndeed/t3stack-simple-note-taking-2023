@@ -4,7 +4,7 @@ import Head from "next/head";
 import { useState } from "react";
 
 import { Header } from "~/components/Header";
-import { api, RouterOutputs } from "../utils/api";
+import { api, type RouterOutputs } from "../utils/api";
 
 const Home: NextPage = () => {
   return (
